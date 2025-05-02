@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 5 Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('e27b31cf-5f60-482d-9b8a-3c7408e2950c.png'); /* Use your background image */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .form-container {
+      max-width: 500px;
+      margin: 5% auto;
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 2rem;
+      border-radius: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container shadow">
+    <form id="task5Form" novalidate>
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" required>
+        <div class="invalid-feedback">Name is required</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" required>
+        <div class="invalid-feedback">Email is required</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" required>
+        <div class="invalid-feedback">Password is required</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="hobbies" class="form-label">Hobbies</label>
+        <select class="form-select" id="hobbies" required>
+          <option value="">Select your hobby</option>
+          <option>Reading</option>
+          <option>Sports</option>
+          <option>Music</option>
+        </select>
+        <div class="invalid-feedback">Please select a hobby</div>
+      </div>
+
+      <button type="submit" class="btn btn-danger w-100">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    const form = document.getElementById('task5Form');
+    form.addEventListener('submit', function(event) {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+    });
+  </script>
+</body>
+</html>

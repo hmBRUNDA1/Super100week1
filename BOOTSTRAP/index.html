@@ -1,1 +1,482 @@
-a
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Builderz</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .top-bar {
+      background-color: #f8aa00;
+      color: black;
+      font-size: 14px;
+      padding: 5px 0;
+    }
+    .navbar-custom {
+      background-color: #0b0c2a;
+    }
+    .navbar-custom .nav-link {
+      color: white;
+    }
+    .hero {
+      background: url('https://via.placeholder.com/1500x600') no-repeat center center;
+      background-size: cover;
+      height: 600px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+    .hero-overlay {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+    }
+    .service-box {
+      background-color: #f8aa00;
+      color: #000;
+      padding: 20px;
+      text-align: center;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Top bar -->
+<div class="container-fluid top-bar text-center">
+  <div class="row">
+    <div class="col-md-4">Opening Hour: Mon - Fri, 8:00 - 9:00</div>
+    <div class="col-md-4">Call Us: +012 345 6789</div>
+    <div class="col-md-4">Email: info@example.com</div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container">
+    <a class="navbar-brand text-warning fw-bold" href="#">Builderz</a>
+    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Service</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Project</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+      <button class="btn btn-warning ms-3">Get A Quote</button>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero">
+  <div class="hero-overlay">
+    <h5>We Are Professional</h5>
+    <h1 class="display-5 fw-bold">For Your Dream Project</h1>
+    <button class="btn btn-light mt-3">Get A Quote</button>
+  </div>
+</div>
+
+<!-- Services Section -->
+<div class="container my-5">
+  <div class="row text-white">
+    <div class="col-md-4">
+      <div class="service-box">
+        <h5>👷 Expert Worker</h5>
+        <p>Lorem ipsum dolor sit amet. Phasellus nec pretium ornare velit non.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="service-box bg-dark text-warning">
+        <h5>💼 Quality Work</h5>
+        <p>Lorem ipsum dolor sit amet. Phasellus nec pretium ornare velit non.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="service-box">
+        <h5>📞 24/7 Support</h5>
+        <p>Lorem ipsum dolor sit amet. Phasellus nec pretium ornare velit non.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Pricing Table</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
+      <a class="navbar-brand" href="#">Company name</a>
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Enterprise</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+        </ul>
+        <button class="btn btn-outline-primary ms-2">Sign up</button>
+      </div>
+    </nav>
+
+    <!-- Pricing Section -->
+    <div class="container text-center py-5">
+      <h2 class="fw-bold">Pricing</h2>
+      <p class="text-muted">Quickly build an effective pricing table for your potential customers with this Bootstrap example.</p>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+        <!-- Free Plan -->
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-header">
+              <h4 class="my-0 fw-normal">Free</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>10 users included</li>
+                <li>2 GB of storage</li>
+                <li>Email support</li>
+                <li>Help center access</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-outline-primary">Sign up for free</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pro Plan -->
+        <div class="col">
+          <div class="card h-100 border-primary">
+            <div class="card-header">
+              <h4 class="my-0 fw-normal">Pro</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>20 users included</li>
+                <li>10 GB of storage</li>
+                <li>Priority email support</li>
+                <li>Help center access</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-primary">Get started</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Enterprise Plan -->
+        <div class="col">
+          <div class="card h-100 border-primary">
+            <div class="card-header">
+              <h4 class="my-0 fw-normal">Enterprise</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>30 users included</li>
+                <li>15 GB of storage</li>
+                <li>Phone and email support</li>
+                <li>Help center access</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-primary">Contact us</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer (Optional) -->
+    <footer class="text-muted py-4 border-top text-center">
+      <div class="container">
+        <p>© 2017 Company Name</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Material Cards</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .material-card {
+      background-image: url('a7a0d5cf-8081-45ae-8cc0-d8020200c777.png'); /* Replace this path if hosted elsewhere */
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      color: white;
+      position: relative;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .material-card:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .card-overlay {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .material-card a {
+      color: gold;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <!-- Card 1 -->
+      <div class="col-md-3 mx-2 mb-4">
+        <div class="card material-card">
+          <div class="card-overlay">
+            <h5 class="card-title">MATERIAL CARDS</h5>
+            <p class="card-text">Cards for display in portfolio style material design by Google.</p>
+            <a href="#">LINK</a> &nbsp;
+            <a href="#">LINK</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-3 mx-2 mb-4">
+        <div class="card material-card">
+          <div class="card-overlay">
+            <h5 class="card-title">MATERIAL CARDS</h5>
+            <p class="card-text">Cards for display in portfolio style material design by Google.</p>
+            <a href="#">LINK</a> &nbsp;
+            <a href="#">LINK</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-3 mx-2 mb-4">
+        <div class="card material-card">
+          <div class="card-overlay">
+            <h5 class="card-title">MATERIAL CARDS</h5>
+            <p class="card-text">Cards for display in portfolio style material design by Google.</p>
+            <a href="#">LINK</a> &nbsp;
+            <a href="#">LINK</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-md-3 mx-2 mb-4">
+        <div class="card material-card">
+          <div class="card-overlay">
+            <h5 class="card-title">MATERIAL CARDS</h5>
+            <p class="card-text">Cards for display in portfolio style material design by Google.</p>
+            <a href="#">LINK</a> &nbsp;
+            <a href="#">LINK</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('a7a0d5cf-8081-45ae-8cc0-d8020200c777.png'); /* Your background image */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .container {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 2rem;
+      border-radius: 1rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container col-md-6">
+    <h2 class="mb-4 text-center">Registration Form</h2>
+    <form id="regForm" novalidate>
+      <div class="mb-3">
+        <label for="firstName" class="form-label">First Name</label>
+        <input type="text" class="form-control" id="firstName" required>
+        <div class="invalid-feedback">Please supply your first name</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="lastName" class="form-label">Last Name</label>
+        <input type="text" class="form-control" id="lastName" required>
+        <div class="invalid-feedback">Please supply your last name</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">E-Mail</label>
+        <input type="email" class="form-control" id="email" required>
+        <div class="invalid-feedback">Please supply your email address</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="phone" class="form-label">Phone #</label>
+        <input type="tel" class="form-control" id="phone" required>
+        <div class="invalid-feedback">Please supply your phone number</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="address" class="form-label">Address</label>
+        <input type="text" class="form-control" id="address" required>
+        <div class="invalid-feedback">Please supply your street address</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="city" class="form-label">City</label>
+        <input type="text" class="form-control" id="city" required>
+        <div class="invalid-feedback">Please supply your city</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="state" class="form-label">State</label>
+        <select class="form-select" id="state" required>
+          <option value="">Please select your state</option>
+          <option>Karnataka</option>
+          <option>Tamil Nadu</option>
+          <option>Kerala</option>
+        </select>
+        <div class="invalid-feedback">Please select your state</div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label d-block">Do you have hosting?</label>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="hosting" id="yes" required>
+          <label class="form-check-label" for="yes">Yes</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="hosting" id="no">
+          <label class="form-check-label" for="no">No</label>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="desc" class="form-label">Project Description</label>
+        <textarea class="form-control" id="desc" rows="3" required></textarea>
+        <div class="invalid-feedback">Please describe your project</div>
+      </div>
+
+      <button class="btn btn-warning" type="submit">Send</button>
+    </form>
+  </div>
+
+  <script>
+    // Delay validation until form is submitted
+    const form = document.getElementById('regForm');
+    form.addEventListener('submit', function (event) {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+    });
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 5 Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('e27b31cf-5f60-482d-9b8a-3c7408e2950c.png'); /* Use your background image */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .form-container {
+      max-width: 500px;
+      margin: 5% auto;
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 2rem;
+      border-radius: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container shadow">
+    <form id="task5Form" novalidate>
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" required>
+        <div class="invalid-feedback">Name is required</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" required>
+        <div class="invalid-feedback">Email is required</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" required>
+        <div class="invalid-feedback">Password is required</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="hobbies" class="form-label">Hobbies</label>
+        <select class="form-select" id="hobbies" required>
+          <option value="">Select your hobby</option>
+          <option>Reading</option>
+          <option>Sports</option>
+          <option>Music</option>
+        </select>
+        <div class="invalid-feedback">Please select a hobby</div>
+      </div>
+
+      <button type="submit" class="btn btn-danger w-100">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    const form = document.getElementById('task5Form');
+    form.addEventListener('submit', function(event) {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+    });
+  </script>
+</body>
+</html>
