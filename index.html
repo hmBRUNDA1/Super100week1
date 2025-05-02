@@ -3,200 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Combined Tasks</title>
-
+  <title>HTML Tasks Index</title>
   <style>
-    /* Task 1: Table styling */
-    .task1-table table, .task1-table th, .task1-table td {
-      border: 2px solid white;
-      border-collapse: collapse;
-    }
-    .task1-table table {
-      width: 60%;
-      background-color: cornflowerblue;
-      margin: 20px auto;
-    }
-
-    /* Task 2: List and links */
-    .box {
-      border: 1px solid black;
-      width: 250px;
-      padding: 10px;
-      margin: 20px auto;
-    }
-    .links {
-      border: 1px solid gray;
-      background-color: #f0f0f0;
-      padding: 10px;
-      width: fit-content;
-      margin: 20px auto;
-    }
-    a {
-      margin-right: 10px;
-    }
-
-    /* Task 3: Registration Form */
-    .registration {
+    body {
       font-family: Arial, sans-serif;
-      margin: 40px auto;
-      max-width: 800px;
-    }
-    .registration table {
-      border-collapse: collapse;
-      width: 100%;
-    }
-    .registration td {
-      border: 1px solid black;
-      padding: 8px;
-      vertical-align: top;
-    }
-    .title {
+      background-color: #f5faff;
+      padding: 40px;
       text-align: center;
-      font-size: 20px;
-      color: blue;
-      font-weight: bold;
-      margin-bottom: 15px;
     }
-    .submit-row {
-      text-align: center;
-      padding-top: 10px;
+
+    h1 {
+      color: #003366;
+      margin-bottom: 40px;
     }
-    label, td:first-child {
-      font-weight: bold;
+
+    .task-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
     }
-    .right-align {
-      text-align: right;
+
+    .task-link {
+      background-color: cornflowerblue;
+      color: white;
+      padding: 15px 30px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 18px;
+      width: 250px;
+      transition: background-color 0.3s ease;
     }
-    input[type="text"],
-    input[type="email"],
-    input[type="password"],
-    input[type="number"],
-    input[type="tel"],
-    textarea,
-    select {
-      width: 95%;
-      padding: 5px;
-    }
-    textarea {
-      resize: vertical;
-    }
-    .gender-options label {
-      display: block;
+
+    .task-link:hover {
+      background-color: royalblue;
     }
   </style>
 </head>
 <body>
 
-  <!-- Task 1: Table -->
-  <div class="task1-table">
-    <table>
-      <thead>
-        <tr>
-          <th>Firstname</th>
-          <th>Lastname</th>
-          <th>Age</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Jill</td>
-          <td>Smith</td>
-          <td>50</td>
-        </tr>
-        <tr>
-          <td>Eve</td>
-          <td>Jackson</td>
-          <td>94</td>
-        </tr>
-        <tr>
-          <td>John</td>
-          <td>Doe</td>
-          <td>80</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+  <h1>HTML Tasks Index Page</h1>
 
-  <!-- Task 2: List and Links -->
-  <div class="box">
-    <p>Lists can be nested (list inside list):</p>
-    <ul>
-      <li>Coffee</li>
-      <li>Tea
-        <ul type="circle">
-          <li>Black tea</li>
-          <li>Green tea</li>
-        </ul>
-      </li>
-      <li>Milk</li>
-    </ul>
-  </div>
-  <div class="links">
-    <p>Click any of the following links</p>
-    <a href="#" target="_blank">Opens in New</a> |
-    <a href="#">Opens in Self</a> |
-    <a href="#">Opens in Parent</a> |
-    <a href="#registration">Opens in Body</a>
-  </div>
-
-  <!-- Task 3: Registration Form -->
-  <div class="registration" id="registration">
-    <div class="title">Registration Form</div>
-    <form>
-      <table>
-        <tr><td>First Name</td><td><input type="text" name="firstname" /></td></tr>
-        <tr><td>Last Name</td><td><input type="text" name="lastname" /></td></tr>
-        <tr><td>Email</td><td><input type="email" name="email" /></td></tr>
-        <tr><td>Password</td><td><input type="password" name="password" /></td></tr>
-        <tr><td>Re-enter Password</td><td><input type="password" name="repassword" /></td></tr>
-        <tr>
-          <td>Gender:</td>
-          <td class="gender-options">
-            <label><input type="radio" name="gender" value="male" /> Male</label>
-            <label><input type="radio" name="gender" value="female" /> Female</label>
-          </td>
-        </tr>
-        <tr><td>Age:</td><td><input type="number" name="age" /></td></tr>
-        <tr><td>Phone Number:</td><td><input type="tel" name="phone" /></td></tr>
-        <tr><td>Address</td><td><textarea name="address" rows="3"></textarea></td></tr>
-        <tr><td>State</td><td><input type="text" name="state" /></td></tr>
-        <tr>
-          <td>Country</td>
-          <td>
-            <select name="country">
-              <option>Choose your country</option>
-              <option>India</option>
-              <option>USA</option>
-              <option>UK</option>
-              <option>Other</option>
-            </select>
-          </td>
-        </tr>
-        <tr>
-          <td>Languages known</td>
-          <td>
-            <label><input type="checkbox" name="lang" value="English" /> English</label>
-            <label><input type="checkbox" name="lang" value="Kannada" /> Kannada</label>
-            <label><input type="checkbox" name="lang" value="Hindi" /> Hindi</label>
-            <label><input type="checkbox" name="lang" value="Telugu" /> Telugu</label>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2">
-            <label><input type="checkbox" name="agree" required />
-            Hereby I declare all the given details are true</label>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="2" class="right-align">
-            <a href="https://acharya.ac.in" target="_blank">Log in to Acharya website</a>
-          </td>
-        </tr>
-      </table>
-      <div class="submit-row">
-        <input type="submit" value="Register" />
-      </div>
-    </form>
+  <div class="task-links">
+    <a class="task-link" href="task1.html">Task 1 - Table with Shapes</a>
+    <a class="task-link" href="task2.html">Task 2 - Navigation Bars</a>
+    <a class="task-link" href="task3.html">Task 3 - Company Table</a>
+    <a class="task-link" href="task4.html">Task 4 - Hoverable Sidenav</a>
+    <a class="task-link" href="task5.html">Task 5 - Login Form</a>
+    <a class="task-link" href="task6.html">Task 6 - My First Styled Page</a>
   </div>
 
 </body>

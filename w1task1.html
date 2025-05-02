@@ -1,54 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,intial-scale=1.0">
-        <title>Task 1</title>
-        <style>
-            table, th, td {
-                border: 2px solid white;
-                border-collapse: collapse;
-            }
-    
-            table {
-                width: 60%;
-                background-color: cornflowerblue;
-                margin: 20px auto;
-            }
-    
-            
-        </style>
-    </head>
-    <body>
-        <table >
-            <thead>
-                <tr>
-                    <th>Firstname</th>
-                    <th>Lastname</th>
-                    <th>Age</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Jill</td>
-                    <td>Smith</td>
-                    <td>50</td>
-                </tr>
-            <tbody>
-                <tr>
-                    <td>Eve</td>
-                    <td>Jackson</td>
-                    <td>94</td>
-                </tr>
-            </tbody>
-            <tbody>
-                <tr>
-                    <td>John</td>
-                    <td>Doe</td>
-                    <td>80</td>
-                </tr>
-            </tbody>
-            </tbody>
-        </table>
-    </body>
+<html>
+<head>
+  <title>Task 1</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 40px;
+    }
+
+    h2 {
+      color: #4169E1;
+    }
+
+    table {
+      margin: 0 auto 30px auto;
+      border-collapse: separate;
+      border-spacing: 10px;
+    }
+
+    th, td {
+      background-color: #add8e6;
+      border: 2px solid #555;
+      padding: 10px 20px;
+      font-weight: bold;
+      border-radius: 15px;
+    }
+
+    th {
+      background-color: #b0e0e6;
+    }
+
+    /* Grid of boxes below the table */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 130px); /* increased width */
+      grid-template-rows: repeat(3, 60px);     /* increased height */
+      gap: 0; /* no spacing, touching edges */
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .shape {
+      width: 130px;
+      height: 60px;
+      border: 2px solid #7CFC00;
+      border-radius: 15px; /* fully rounded on all sides */
+      box-sizing: border-box;
+    }
+
+    .oval {
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Task 1</h2>
+
+  <table>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>Doe</td>
+      <td>80</td>
+    </tr>
+  </table>
+
+  <div class="grid-container">
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape oval"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+  </div>
+
+</body>
 </html>
